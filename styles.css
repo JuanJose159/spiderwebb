@@ -1,0 +1,101 @@
+/* Estilos para el cuerpo (body) y la página HTML en general */
+
+/* Resetear los márgenes y rellenos por defecto del cuerpo y la página HTML */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%; /* Hacer que el cuerpo y la página ocupen el 100% de la altura */
+    overflow: hidden; /* Ocultar barras de desplazamiento innecesarias */
+}
+
+/* Estilos para la barra de navegación */
+.navbar {
+    background-color: #e51919; /* Color de fondo de la barra de navegación */
+    color: white; /* Color del texto en la barra de navegación */
+    display: flex; /* Mostrar los elementos de la barra de navegación en una línea */
+    justify-content: space-between; /* Distribuir los elementos a lo largo de la barra con espacio entre ellos */
+    align-items: center; /* Centrar verticalmente los elementos dentro de la barra de navegación */
+    padding: 10px 20px; /* Agregar espaciado interno */
+}
+
+/* Estilos para el logo dentro de la barra de navegación */
+.logo img {
+    width: 150px; /* Ajusta el tamaño del logo */
+    height: auto; /* Ajustar la altura proporcionalmente al ancho */
+}
+
+/* Estilos para la lista de enlaces de navegación */
+.nav-links {
+    list-style: none; /* Quitar viñetas de la lista */
+    display: flex; /* Mostrar los enlaces en una línea */
+    gap: 20px; /* Agregar espacio entre los enlaces */
+    margin: 0; /* Eliminar márgenes externos */
+    padding: 0; /* Eliminar relleno interno */
+}
+
+/* Estilos para los enlaces individuales en la lista de navegación */
+.nav-links li a {
+    text-decoration: none; /* Quitar subrayado del enlace */
+    color: white; /* Color del texto en los enlaces */
+}
+
+
+/* Estilos para el fondo de la página */
+
+/* Posicionar el fondo de manera fija en la ventana del navegador */
+.background {
+    position: fixed;
+    top: 0; /* Alinearlo en la parte superior */
+    left: 0; /* Alinearlo en la parte izquierda */
+    width: 100%; /* Ocupar el 100% del ancho de la ventana */
+    height: 100%; /* Ocupar el 100% de la altura de la ventana */
+    background: url('./assets/back_ground.png') no-repeat center center fixed; /* Imagen de fondo centrada y fija */
+    background-size: cover; /* Ajustar el tamaño de la imagen de fondo para cubrir completamente */
+}
+
+/* Estilos para la imagen en movimiento */
+
+/* Posicionar la imagen en una posición absoluta en relación al cuerpo */
+.moving-image {
+    position: absolute;
+    top: 40%; /* Ajustar la posición vertical de la imagen */
+    left: -80; /* Alinear la imagen a la izquierda */
+    width: 400px; /* Ancho de la imagen, ajusta según sea necesario */
+    height: 300px; /* Altura de la imagen, ajusta según sea necesario */
+    background: url('./assets/spiderman_body.png') no-repeat center center; /* Imagen de la persona centrada */
+    background-size: cover; /* Ajustar el tamaño de la imagen de la persona para cubrir completamente */
+    animation: moveImage 10s linear infinite; /* Aplicar la animación 'moveImage' */
+}
+
+/* Animación para mover la imagen de lado a lado */
+
+@keyframes moveImage {
+    0%, 100% {
+        transform: translateX(calc(70vw - 60px )); /* Mover la imagen hacia la derecha */
+        /* El valor '100vw' representa el ancho de la ventana del navegador,
+           y '100px' es la mitad del ancho de la imagen */
+        
+    }
+    50% {
+        transform: translateX(0); /* Establecer posición X inicial */
+    }
+}
+
+.navbar-items{
+    width: 200px;
+    height: 100px;
+    background-color: yellow;
+    border: 3px solid black;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: 18px;
+    border-radius: 20px;
+    transform: rotate(-5deg);
+  }
+
+  .viñeta {
+    width: 300px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight:bold;
+  }
+
+

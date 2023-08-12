@@ -1,0 +1,106 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%; /* Hacer que el cuerpo y la página ocupen el 100% de la altura */
+    overflow: hidden; /* Ocultar barras de desplazamiento innecesarias */
+}
+
+/* Estilos para la barra de navegación */
+.navbar {
+    background-color: #e51919; /* Color de fondo de la barra de navegación */
+    color: white; /* Color del texto en la barra de navegación */
+    display: flex; /* Mostrar los elementos de la barra de navegación en una línea */
+    justify-content: space-between; /* Distribuir los elementos a lo largo de la barra con espacio entre ellos */
+    align-items: center; /* Centrar verticalmente los elementos dentro de la barra de navegación */
+    padding: 10px 20px; /* Agregar espaciado interno */
+}
+
+/* Estilos para el logo dentro de la barra de navegación */
+.logo img {
+    width: 150px; /* Ajusta el tamaño del logo */
+    height: auto; /* Ajustar la altura proporcionalmente al ancho */
+}
+
+/* Estilos para la lista de enlaces de navegación */
+.nav-links {
+    list-style: none; /* Quitar viñetas de la lista */
+    display: flex; /* Mostrar los enlaces en una línea */
+    gap: 20px; /* Agregar espacio entre los enlaces */
+    margin: 0; /* Eliminar márgenes externos */
+    padding: 0; /* Eliminar relleno interno */
+}
+
+/* Estilos para los enlaces individuales en la lista de navegación */
+.nav-links li a {
+    text-decoration: none; /* Quitar subrayado del enlace */
+    color: white; /* Color del texto en los enlaces */
+}
+
+
+
+
+/* Posicionar el fondo de manera fija en la ventana del navegador */
+.background {
+    position: fixed;
+    top: 0; /* Alinearlo en la parte superior */
+    left: 0; /* Alinearlo en la parte izquierda */
+    width: 100%; /* Ocupar el 100% del ancho de la ventana */
+    height: 100%; /* Ocupar el 100% de la altura de la ventana */
+    background: url('./assets/fondo\ personajes.jpg') no-repeat center center fixed; /* Imagen de fondo centrada y fija */
+    background-size: cover; /* Ajustar el tamaño de la imagen de fondo para cubrir completamente */
+}
+
+
+
+  .viñeta {
+    width: 300px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight:bold;
+    
+  }
+
+
+
+  .card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Estilos para las tarjetas */
+.card {
+    width: 300px;
+    background-color: #f5f5f5;
+    border-radius: 15px;
+    overflow: hidden;
+    margin: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* Estilos para la imagen en la tarjeta */
+.card-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Estilos para el contenido en la tarjeta */
+.card-content {
+    padding: 15px;
+}
+
+.card-content h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.card-content p {
+    font-size: 14px;
+    line-height: 1.5;
+}
